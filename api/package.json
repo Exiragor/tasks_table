@@ -1,0 +1,21 @@
+{
+  "name": "tasks_table_api",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.ts",
+  "scripts": {
+    "dev": "tsc & node dist/server.js",
+    "build": "tsc"
+  },
+  "author": "Exiragor <winden999@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^14.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^10.9.4",
+    "typescript": "^3.0.3"
+  }
+}
