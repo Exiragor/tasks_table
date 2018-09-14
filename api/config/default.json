@@ -1,0 +1,10 @@
+{
+    "db": {
+        "host": "localhost",
+        "user": "root",
+        "password": ""
+    },
+    "app": {
+        "post": 4000
+    }
+}
