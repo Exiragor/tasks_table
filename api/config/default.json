@@ -5,6 +5,6 @@
         "password": ""
     },
     "app": {
-        "post": 4000
+        "port": 4000
     }
 }

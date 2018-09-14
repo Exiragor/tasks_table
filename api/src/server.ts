@@ -1,6 +1,7 @@
 import * as express from 'express'
 import * as  express_graphql from 'express-graphql'
 import { buildSchema } from 'graphql'
+import * as config from 'config'
 // GraphQL schema
 const schema = buildSchema(`
     type Query {
@@ -20,4 +21,6 @@ app.use('/api', express_graphql({
     rootValue: root,
     graphiql: true
 }));
-app.listen(4000, () => console.log('Express GraphQL Server Now Running On localhost:4000/graphql'));
+
+const port = config.app.port || 4000
+app.listen(port, () => console.log(`Express GraphQL Server Now Running On localhost:${port}/api`));
