@@ -8,5 +8,5 @@ type User {
 }
 
 type Mutation {
-    deleteUser(id: ID!): User!
+    addUser(id: ID!, login: String!): [User]
 }
