@@ -3,8 +3,11 @@
         "target": "es5",
         "module": "commonjs",
         "outDir": "dist",
-        "sourceMap": true,
-        "moduleResolution": "node"
+        "sourceMap": false,
+        "moduleResolution": "node",
+        "lib": [
+            "esnext"
+        ]
     },
     "files": [
         "./node_modules/@types/node/index.d.ts"

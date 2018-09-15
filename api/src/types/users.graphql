@@ -1,0 +1,12 @@
+type Query {
+    users: [User]
+}
+
+type User {
+    id: ID!
+    login: String!
+}
+
+type Mutation {
+    deleteUser(id: ID!): User!
+}
