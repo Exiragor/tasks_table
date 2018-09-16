@@ -1,10 +1,11 @@
-import { task } from '../models'
+import { Task } from '../models'
 
-let tasks = () => task.all()
-
-const createTask = (params) => task.create(params)
+const tasks = () => Task.all()
+const task = (args) => Task.get(args.id)
+const createTask = (params) => Task.create(params)
 
 export default {
     tasks,
+    task,
     createTask
 }

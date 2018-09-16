@@ -1,3 +1,3 @@
-import Task from './task'
+import TaskModel from './task'
 
-export const task = new Task()
+export const Task = new TaskModel()

@@ -1,14 +1,24 @@
 type Query {
     tasks: [Task]
+    task(id: ID): Task
 }
 
 type Task {
     id: ID!
     title: String!
-    text: String!
+    description: String
+    status: String!
+    type: String
+    priority: String
 }
 
 type Mutation {
     deleteTask(id: ID!): [Task]
-    createTask(title: String, type: String, status: String): ID!
+    createTask(
+        title: String,
+        type: String,
+        status: String,
+        description: String,
+        priority: String
+    ): ID!
 }
