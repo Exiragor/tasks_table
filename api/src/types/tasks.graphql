@@ -9,5 +9,6 @@ type Task {
 }
 
 type Mutation {
-    deleteTask(id: ID!): Task!
+    deleteTask(id: ID!): [Task]
+    createTask(title: String, type: String, status: String): ID!
 }

@@ -2,7 +2,8 @@
     "db": {
         "host": "localhost",
         "user": "root",
-        "password": ""
+        "password": "",
+        "name": "tasks_table"
     },
     "app": {
         "port": 4000
